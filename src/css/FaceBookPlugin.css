@@ -1,0 +1,22 @@
+/* FacebookPlugin.css */
+
+.facebook-plugin-container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.fb-page {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .fb-page {
+    max-width: 100%;
+    /* Adjust the max-width for smaller screens */
+  }
+}

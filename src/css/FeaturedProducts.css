@@ -1,0 +1,155 @@
+/* Featured Products Styles */
+.featuredProducts {
+  background-color: #f4f4f4;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.featuredProductsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.productList {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.productCard {
+  width: 250px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.productCard img {
+  max-width: 100%;
+  height: 250px; /* Adjusted the height */
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.productCard:hover img {
+  transform: scale(1.1);
+}
+
+.productDetails {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+}
+
+.productCard h3 {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.productCard p {
+  font-size: 1.2rem;
+  color: #ff6600;
+  margin-top: 5px;
+}
+
+/* Hover effect for product details */
+.productCard:hover .productDetails {
+  background-color: #f8f8f8;
+}
+
+/* Media Query for Responsive Styles */
+@media (max-width: 768px) {
+  .featuredProducts {
+    padding: 60px 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .productCard {
+    width: 100%;
+  }
+
+  .productCard img {
+    height: 250px;
+    width:70%;
+  }
+
+  .productCard h3 {
+    font-size: 1.3rem;
+  }
+
+  .productCard p {
+    font-size: 1rem;
+  }
+}
+
+/* Add this to your FeaturedProducts.css file or create a new CSS file */
+
+.productOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75); /* Adjust the opacity as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  outline: none;
+  
+}
+
+.productModal {
+  position: relative;
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto;
+  overflow: hidden;
+  
+}
+
+.modalImage {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  
+}
+
+.modalImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
